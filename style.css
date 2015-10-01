@@ -1,0 +1,48 @@
+/*
+Theme Name: Resonar Light
+Theme URI: https://github.com/koke/resonar-light/
+Description: Resonar Light adds some tweaks to Resonar.
+Version: 1.0.5.1
+Author: Jorge Bernal
+Author URI: http://koke.me/
+Template: resonar
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: resonar
+Tags: blue, white, light, one-column, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, sticky-post, translation-ready
+*/
+
+/**
+Playfair Display overrides
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-navigation .post-title,
+.comments-title,
+.comment-reply-title,
+.hentry div#jp-relatedposts div.jp-relatedposts-items-visual h4.jp-relatedposts-post-title,
+.hentry .jp-relatedposts-post-title {
+  font-family: "Libre Baskerville", georgia, serif;
+}
+
+/**
+Custom tweaks
+*/
+
+.site-header,.site-footer {
+	max-width: 1088px;
+	margin: 0 auto;
+}
+
+.sidebar-inner {
+	max-width: 960px;
+}
+
+article .jetpack_subscription_widget {
+	margin: 0;
+}
