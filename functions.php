@@ -103,3 +103,5 @@ add_action( 'wp_enqueue_scripts', 'rl_remove_devicepx', 20 );
 function rl_remove_devicepx() {
   wp_dequeue_script( 'devicepx' );
 }
+
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
