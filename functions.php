@@ -2,6 +2,7 @@
 
 define( 'RESONAR_LIGHT_USE_WEB_FONT_LOADER', true );
 define( 'RESONAR_LIGHT_FORCE_LATIN', true );
+define( 'RESONAR_LIGHT_DISABLE_WEB_FONTS', false );
 
 // -----------
 // Font tweaks
@@ -84,7 +85,9 @@ EMBED;
 
 if ( RESONAR_LIGHT_USE_WEB_FONT_LOADER ) {
   add_action( 'wp_print_styles', 'resonar_light_deregister_fonts_style', 100 );
-  add_action( 'wp_enqueue_scripts', 'resonar_light_output_webfont_loader' );
+  if ( ! RESONAR_LIGHT_DISABLE_WEB_FONTS ) {
+    add_action( 'wp_enqueue_scripts', 'resonar_light_output_webfont_loader' );
+  }
 }
 
 // -----------
